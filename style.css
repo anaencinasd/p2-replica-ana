@@ -1,1 +1,16 @@
+/*Estilos por etiquetas*/
 
+
+
+
+
+
+/*Estilos por clase*/
+.logo{
+    width: 164.2px;
+    height: 55.35px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
