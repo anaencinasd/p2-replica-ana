@@ -4,9 +4,9 @@
 
 body{
     background-color: #F7FAFD;
-    position: relative;
-    width: 1080px;
-    height: 5795px;
+    position: flex;
+    width: 100%;
+    
 }
 
 
@@ -16,15 +16,67 @@ body{
 
 /*Estilos por clase*/
 
-.logo{
-    position: absolute;
-    width: 10.2em;
-    height: 3.4em;
-    left: 5em;
-    top: 0em;
+
+.parentContainer{
+    height: 8.6em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+
 }
 
-.nav_item{
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 10.2em;
+    height: 3.4em;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    list-style-type: none;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu_item{
+    font-family:'Open Sans', sans-serif;
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #333333;
+    align-items: center;
+}
+
+.cta-download{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #FF556E;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #FF556E;
+    border-radius: 35px;
+    width: 10%;
+    height: 30%;
+}
+
+@media screen and {
+    
+}
+
+
+
+
+/*.nav_item{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -32,14 +84,14 @@ body{
     line-height: 1rem;
 
 
-}
+/*}
 
 .top-bar, .top-bar a{
     color: blueviolet;
     
-}
+}*/
 
-.top-bar{
+/*.top-bar{
     position: fixed;
     display: flex;
     flex: column;
@@ -93,15 +145,22 @@ body{
     height: 16px;
 }*/
 
-.menu{
+/*.menu{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding: 0em 3.12em 0em 0em;
     gap: 1.5em;
-}
+}*/
 
 
 /*Estilos por ID*/
 
+#arrow{
+    width: 9px;
+    height: 7px;
+    color: #333333;
+    align-items: center;
+
+}
