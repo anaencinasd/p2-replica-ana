@@ -44,6 +44,8 @@ p{
     align-items: center;
     align-content: center;
     justify-content: space-around;
+    background-color: #F7FAFD;
+    position: fixed;
 
 }
 
@@ -95,7 +97,8 @@ p{
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    gap: 3.5%;
+    padding-top: 10em;
+   
 
 }
 
@@ -106,6 +109,7 @@ p{
 .landing-img{
     width:100%;
     height: 70%;
+    padding-top: 3.5%;
     
 
 }
@@ -137,10 +141,24 @@ p{
 
     height: 75%;
     width: 100%;
-
     
+}
 
-    
+.icons-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 5%;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #333333;
+
+
 }
 
 @media screen and (max-width: 1200px){
@@ -185,6 +203,7 @@ p{
     
 }
 }
+
 
 
 
@@ -286,5 +305,64 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+}
+
+#green-diamond{
+    width: 1.5% ;
+    height: 1.5% ;
+    align-self: flex-start;
+    padding: 0em 0em 0em 2em;
+
+
+}
+
+#yellow-cirle{
+    width: 2%;
+    height: 2%;
+    align-self: flex-end;
+    padding: 0em 5em 0em 0em;
+
+}
+
+#purple-circle{
+    height: 7.5em;
+    width: 7.5em;
+    background-color: #ebe7fa;
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: flex-end; 
+
+}
+
+#green-circle{
+    height: 7.5em;
+    width: 7.5em;
+    background-color: #daf4ef;
+    border-radius: 50%;
+
+}
+
+#red-circle{
+    height: 7.5em;
+    width: 7.5em;
+    background-color: #f8e5ea;
+    border-radius: 50%;
+
+}
+
+#yellow-circle-icon{
+    height: 7.5em;
+    width: 7.5em;
+    background-color: #f8f1de;
+    border-radius: 50%;
+
+}
+
+#blue-circle{
+    height: 7.5em;
+    width: 7.5em;
+    background-color: #e1f2fa;
+    border-radius: 50%;
 
 }
