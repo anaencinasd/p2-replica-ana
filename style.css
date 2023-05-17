@@ -102,6 +102,28 @@ p{
 
 }
 
+.parent-section-two{
+    height: 48.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+ 
+    padding-top: 6em;
+    padding-bottom: 3em;
+    
+
+}
+
+.parent-section-three{
+    height: 49em;
+    padding-top: 10em;
+    background-color: #E8EFF6;
+    width: 100%;
+}
+
 .first-page-paragraph{
     padding: 0 10% ;
 }
@@ -144,22 +166,71 @@ p{
     
 }
 
-.icons-list{
+.icon-uses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.icon-circles{
     display: flex;
     flex-direction: row;
-    list-style-type: none;
-    gap: 5%;
-    justify-content: center;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2%;
+
+    
+    width: 20%;
+    height: auto;
+}
+
+.circles{
+    width: 15vw;
+    height: 13vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
     flex-wrap: wrap;
 
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    color: #333333;
+}
 
+.text-in-column{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0;
+
+width: 35%;
+height: auto;
 
 }
+
+.column-of-text{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    font-size: 3em;
+
+}
+
+.description-image{
+
+width: 35%;
+height: fit-content;
+
+}
+
+.description-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 @media screen and (max-width: 1200px){
     .parentContainer{
@@ -176,7 +247,20 @@ p{
         flex-direction: column;
         justify-content: flex-start;
     }
-    
+
+    .parent-section-two{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80%;
+        padding: 5%;
+    }
+
+    #lightbox-button{
+        width: 20%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 580px ) {
@@ -201,91 +285,21 @@ p{
         align-items: center;
         gap: 5%;
     
-}
-}
+    }
 
+    .icon-uses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-
-
-
-/*.nav_item{
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.75rem;
-    line-height: 1rem;
-
-
-/*}
-
-.top-bar, .top-bar a{
-    color: blueviolet;
-    
-}*/
-
-/*.top-bar{
-    position: fixed;
-    display: flex;
-    flex: column;
-    align-items: flex-start;
-    padding: 2.6em 0em;
-    gap: 0.6em;
-
+    .circles{
+        width: 150vw;
+        height: 30vw;
+    }
 
 }
-
-.section-bar{
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0em 0em 0em 5em;
-    gap: 12.625em;
-
-    width: 100%;
-    height: 3.45em;
-
-}
-
-#menu-header{
-    
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 0.75em;
-    font-style: normal;
-
-
-}
-
-/*.items{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-    left: 443px; 
-    top:0px;
-
-    width: 382px;
-    height: 16px;
-}*/
-
-/*.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0em 3.12em 0em 0em;
-    gap: 1.5em;
-}*/
 
 
 /*Estilos por ID*/
@@ -325,44 +339,52 @@ p{
 
 }
 
+
+
+
 #purple-circle{
-    height: 7.5em;
-    width: 7.5em;
+    
     background-color: #ebe7fa;
     border-radius: 50%;
-    flex-direction: column;
-    justify-content: flex-end; 
+    
 
 }
 
 #green-circle{
-    height: 7.5em;
-    width: 7.5em;
     background-color: #daf4ef;
     border-radius: 50%;
 
 }
 
 #red-circle{
-    height: 7.5em;
-    width: 7.5em;
     background-color: #f8e5ea;
     border-radius: 50%;
 
 }
 
 #yellow-circle-icon{
-    height: 7.5em;
-    width: 7.5em;
     background-color: #f8f1de;
     border-radius: 50%;
 
 }
 
 #blue-circle{
-    height: 7.5em;
-    width: 7.5em;
+    
     background-color: #e1f2fa;
     border-radius: 50%;
 
 }
+
+
+
+
+
+#lightbox-button{
+    width: 50%;
+}
+
+#getting-results{
+    text-align: left;
+    font-size: 0.87em;
+}
+
