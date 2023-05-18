@@ -23,6 +23,15 @@ h1{
         margin-top: 1px;
     }
 
+h2{
+         font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-style: normal;
+        font-weight: 900px;
+        font-size: 1em;
+        color:#333333;
+
+    }
 
 
 p{
@@ -268,7 +277,81 @@ h3{
     
 }
 
-.icon-uses{
+.circles-frame{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+    gap: 5%
+}
+
+
+.purple-circle{
+    background-color: #ebe7fa;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.green-circle{
+    background-color: #daf4ef;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.red-circle{
+    background-color: #f8e5ea;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.yellow-circle-icon{
+    background-color: #f8f1de;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.blue-circle{
+    background-color: #e1f2fa;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+/*.icon-uses{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -296,7 +379,7 @@ h3{
     align-items: center;
     flex-wrap: wrap;
 
-}
+}*/
 
 .text-in-column{
 
@@ -468,6 +551,8 @@ height: fit-content;
 .fa-users{
     color: #aa7eec;
     font-size: 4em;
+    text-align: center;
+    align-items: center;
 }
 
 .fa-code{
@@ -742,6 +827,8 @@ height: fit-content;
     color: #777777;
 
 }
+
+
 
 
 
