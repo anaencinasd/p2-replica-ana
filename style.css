@@ -2,11 +2,18 @@
 
 /*Estilos por etiquetas*/
 
+
+
 body{
     background-color: #F7FAFD;
     position: flex;
-    width: 1436px;
+    width: 100%;
+    margin-top: 0;
     
+}
+
+a{
+    text-decoration: none;
 }
 
 h1{
@@ -124,7 +131,7 @@ h3{
     font-family:'Open Sans', sans-serif;
     font-style: normal; 
     font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 1.3rem;
     line-height: 1rem;
     color: #333333;
     align-items: center;
@@ -139,7 +146,7 @@ h3{
     background-color: white;
     border: 2px solid #FF556E;
     border-radius: 35px;
-    padding: 0.5em;
+    padding: 8px 16px;
 }
 
 .parent-section-one{
@@ -166,7 +173,7 @@ h3{
     align-items: flex-start;
     align-content: center;
  
-    padding-top: 6em;
+    padding-top: 40em;
     padding-bottom: 3em;
     padding-right: 10px;
     padding-left: 10px;
@@ -719,8 +726,8 @@ height: fit-content;
 /*Estilos por ID*/
 
 #arrow{
-    width: 9px;
-    height: 7px;
+    width: auto;
+    height: 14px;
     color: #333333;
     align-items: center;
 
