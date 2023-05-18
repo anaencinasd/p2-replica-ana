@@ -250,8 +250,20 @@ h3{
     width:100%;
     height: 70%;
     padding-top: 3.5%;
-    
 
+    animation: zoom 5s infinite;
+}
+
+@keyframes zoom{
+    0% {
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: scale(0.5)
+    }
 }
 
 .download-buttons{
@@ -303,8 +315,24 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+   
 }
+
+
+.purple-circle:hover{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
 
 .green-circle{
     background-color: #daf4ef;
@@ -316,6 +344,11 @@ h3{
     justify-content: center;
     align-items: center;
     
+}
+
+.green-circle:hover{
+    animation: spin 1s linear infinite;
+
 }
 
 .red-circle{
@@ -330,6 +363,10 @@ h3{
     
 }
 
+.red-circle:hover{
+    animation: spin 1s linear infinite;
+}
+
 .yellow-circle-icon{
     background-color: #f8f1de;
     width: 150px;
@@ -342,6 +379,11 @@ h3{
     
 }
 
+.yellow-circle-icon:hover{
+    animation: spin 1s linear infinite;
+
+}
+
 .blue-circle{
     background-color: #e1f2fa;
     width: 150px;
@@ -352,6 +394,11 @@ h3{
     justify-content: center;
     align-items: center;
     
+}
+
+.blue-circle:hover{
+    animation: spin 1s linear infinite;
+  
 }
 
 
