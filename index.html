@@ -15,15 +15,26 @@
         <div class="logo"> 
             <img src="images/logo.svg" alt="logotipo">
         </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="show-menu">
+            &#8801
+        </label>
+        <nav>
         <ul class="menu">
-            <li class="menu_item"><a href="#anchor-one">DESCRIPTION</a></li>
-            <li class="menu_item"><a href="#anchor-two">FEATURES</a></li>
-            <li class="menu_item"><a href="#anchor-three">SCREENS</a></li>
-            <li class="menu_item"><a href="#"></a>EXTRA <img id="arrow" src="images/down-arrow.png" alt="go-down"></li>
-            
+            <li class="menu_item"><a class="anchor-nav" href="#anchor-one">DESCRIPTION</a></li>
+            <li class="menu_item"><a class="anchor-nav" href="#anchor-two">FEATURES</a></li>
+            <li class="menu_item"><a class="anchor-nav" href="#anchor-three">SCREENS</a></li>
+            <li class="menu_item"><a class="anchor-nav" href="#"></a> EXTRA <img id="arrow" src="images/down-arrow.png" alt="go-down"></li>
+            <a href="https://factoriaf5.org/" class="cta-download">DOWNLOAD</a>
         </ul>
-        <a href="https://factoriaf5.org/" class="cta-download">DOWNLOAD</a>
 
+        
+        <label for="check" class="hide-menu">
+            &#215
+        </label>
+        
+        
+    </nav>
         
     </header>
     <main>
@@ -40,8 +51,7 @@
                 <button class="cta-download-2"><i class="fab fa-google-play"></i>DOWNLOAD</button>
 
             </div>
-
-            <div>
+            <div class="img-section-one-container">
                 <img class="landing-img" src="images/header-iphone.png" alt="mobile-phone">
             </div>
             <div class="circles-frame">
@@ -112,9 +122,9 @@
                 <div class="text-in-column-2">
                     <a name="anchor-two"></a>
                     <div class="section-three-buttons">
-                        <button class="selection-buttons" id="schedule-button">Schedule</button>
-                        <button class="selection-buttons" id="tracking-button">Tracking</button>
-                        <button class="selection-buttons" id="organize-button">Organize</button>       
+                        <button class="selection-buttons" id="schedule-button"><i class="far fa-clock"></i>  Schedule</button>
+                        <button class="selection-buttons" id="tracking-button"><i class="fas fa-list"></i>  Tracking</button>
+                        <button class="selection-buttons" id="organize-button"><i class="far fa-calendar-alt"></i>  Organize</button>       
                     </div>
                     <div class="text-in-column-2">
                         <p id="section-text"><strong>Schedule tasks</strong> to keep track of their completion. Sync provides multiple scheduling options including alarms and reminders.</p>
@@ -309,6 +319,7 @@
     <hr class="footer-line">
     
     <footer>
+        <div class="footer-info">
         <div class="footer-column">
             <h3>Contact info</h3>
             <p class="p-footer"><i class="fas fa-map-marker-alt"></i>  22 Innovation Street CA, US</p>
@@ -333,9 +344,11 @@
             <span class="dot"><i class="fab fa-pinterest-p"></i></span>
             <span class="dot"><i class="fab fa-instagram"></i></span>
         </div>
+    </div>
+    <p class="p-copyright">Copyright <i class="far fa-copyright"></i> 2020 Inovatik - All rigths reserved</p>
 
     </footer>
-    <p class="p-copyright">Copyright <i class="far fa-copyright"></i> 2020 Inovatik - All rigths reserved</p>
+    
 
     
 </body>

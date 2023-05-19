@@ -56,6 +56,11 @@ p{
 }
 
 footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -92,11 +97,12 @@ h3{
 
 
 
+
 /*Estilos por clase*/
 
 
 .parentContainer{
-    height: 8.6em;
+    height: 8em;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -127,14 +133,47 @@ h3{
 
 }
 
+.anchor-nav{
+    font-family:'Open Sans', sans-serif;
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #333333;
+    align-items: center;
+   
+    
+}
+
+.show-menu, .hide-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+
+}
+
+.show-menu{
+    order:1;
+
+}
+
+.menu a:hover, .show-menu:hover, .hide-menu:hover{
+    color: #FF556E;
+} 
+
+
 .menu_item{
     font-family:'Open Sans', sans-serif;
     font-style: normal; 
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1rem;
     color: #333333;
     align-items: center;
+
+    display: flex;
+    
 }
 
 .cta-download{
@@ -150,7 +189,6 @@ h3{
 }
 
 .parent-section-one{
-    height: 79em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -160,20 +198,21 @@ h3{
     padding-top: 10em;
     padding-right: 10px;
     padding-left: 10px;
+
    
 
 }
 
 .parent-section-two{
-    height: 48.5em;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: center;
+    flex-wrap: wrap;
  
-    padding-top: 40em;
+    padding-top: 8em;
     padding-bottom: 3em;
     padding-right: 10px;
     padding-left: 10px;
@@ -182,7 +221,6 @@ h3{
 }
 
 .parent-section-three{
-    height: 49em;
     padding-top: 10em;
     background-color: #E8EFF6;
     width: 100%;
@@ -273,6 +311,11 @@ h3{
     align-items: center;
     gap: 5%;
     
+}
+
+.img-section-one-container{
+    width: 100%;
+    height: auto;
 }
 
 .cta-download-2{
@@ -455,7 +498,7 @@ height: auto;
 
     padding: 0;
     
-    width: 50%;
+    width: 70%;
     height: auto;
     
     
@@ -490,9 +533,13 @@ height: fit-content;
 
 .section-three-buttons{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 5%;
     justify-content: flex-start;
+    margin-bottom: 1em;
+
+    width: 100;
 
 
     
@@ -698,83 +745,11 @@ height: fit-content;
 }
 
 
-
-
-@media screen and (max-width: 1200px){
-    .parentContainer{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    
-
-
-}
-
-@media screen and (max-width: 768px ) {
-    .parentContainer{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .parent-section-two{
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 80%;
-        padding: 5%;
-    }
-
-    #lightbox-button{
-        width: 20%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 580px ) {
-    .parentContainer{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .menu{
-        flex-direction: column;
-    }
-
-    .logo{
-        flex-direction: column;
-        justify-content: flex-end;
-        top: 5%;
-    }
-
-    .download-buttons{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5%;
-    
-    }
-
-    .icon-uses{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .circles{
-        width: 150vw;
-        height: 30vw;
-    }
-
-}
-
-
 /*Estilos por ID*/
 
 #arrow{
     width: auto;
-    height: 14px;
+    height: 7px;
     color: #333333;
     align-items: center;
 
@@ -879,6 +854,274 @@ height: fit-content;
 #organize-button{
     background-color: #f7fafd;
     color: #777777;
+    margin-top: 0.75em;
+
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+
+
+
+/*MEDIA*/
+
+/*@media screen and (max-width: 1200px){
+    .parentContainer{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+
+
+}*/
+
+@media screen and (max-width: 768px ) {
+    .parentContainer{
+        position:relative
+    }
+
+    
+
+    .logo{
+        width: 10.2em;
+        height: 3.4em;}
+    
+
+    .show-menu, .hide-menu{
+        display: block;
+    }
+
+    .hide-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+        background-color: #f7fafd;
+        display: block;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .hide-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0px;
+    }
+  
+  
+    .cta-download{
+        width: 50%;
+        margin-top: 5%;
+        display: inline;
+        justify-content: center;
+    }
+    .parent-section-two{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding: 5%;
+        margin-top: 5em;
+    }
+
+    .description-image{
+        width: 80%;
+        align-items: center;
+    }
+
+    .text-in-column{
+        width: 100%;
+    }
+
+    #lightbox-button{
+        width: 20%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent-section-three{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding: 5%;
+        margin-top: 5em;
+    }
+
+    .text-in-column-2{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .parent-section-five{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding: 5%;
+        margin-top: 5em;
+        
+    }
+
+    .cta-download-2{
+        margin-top: 5%;
+    }
+
+    .section-three-buttons{
+        width: 100%;
+           }
+    
+           .selection-buttons{
+            padding: 1.5em;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+           }
+
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (max-width: 480px ) {
+    .parentContainer{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20%;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        
+    }
+
+    .logo{
+        flex-direction: column;
+        justify-content: flex-end;
+        top: 5%;
+    }
+
+    .cta-download{
+        order: 3;
+    }
+
+    .download-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    
+    }
+
+
+    .parent-section-two{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding: 5%;
+        margin-top: 5em;
+    }
+
+    .description-image{
+        width: 80%;
+        align-items: center;
+    }
+
+    .text-in-column{
+        width: 100%;
+    }
+
+    #lightbox-button{
+        width: 20%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent-section-three{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding: 5%;
+        margin-top: 5em;
+    }
+
+    .text-in-column-2{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .parent-section-five{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        padding: 5%;
+        margin-top: 5em;
+        
+    }
+
+    .cta-download-2{
+        margin-top: 5%;
+    }
+
+    .section-three-buttons{
+        width: 100%;
+           }
+    
+           .selection-buttons{
+            padding: 1.5em;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+           }
+
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
 
 }
 
