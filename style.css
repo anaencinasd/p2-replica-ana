@@ -339,6 +339,12 @@ h3{
     
 }
 
+.cta-download-2:hover{
+    background: linear-gradient(25deg, brown, pink, gold);
+    background-position: 0 0;
+    transition: 0.5s;
+}
+
 .circles-frame{
     display: flex;
     flex-direction: row;
@@ -444,40 +450,6 @@ h3{
   
 }
 
-
-
-
-
-/*.icon-uses{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
-
-.icon-circles{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 2%;
-
-    
-    width: 20%;
-    height: auto;
-}
-
-.circles{
-    width: 15vw;
-    height: 10vw;
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-
-}*/
-
 .text-in-column{
 
 display: flex;
@@ -529,6 +501,23 @@ height: fit-content;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    
+    animation: slidein 3s 2 alternate;
+}
+
+
+@keyframes slidein {
+
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
 }
 
 .section-three-buttons{
